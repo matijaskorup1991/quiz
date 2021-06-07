@@ -91,16 +91,16 @@
   function createHtmlTag(el, i) {
     $('#content').innerHTML += `
   <article>
-  <figure>
-  <img class="photos" src=${el.url} alt="Trulli">
-  <figcaption>
- ${el.question}
-  </figcaption>
-</figure>
-<div class="choice">
-${el.choice.map((input) => `<span class=${i}>${input}</span>`).join('')}
- </div>
-<article>
+    <figure>
+      <img class="photos" src=${el.url} alt="Trulli">
+      <figcaption>
+       ${el.question}
+      </figcaption>
+    </figure>
+  <div class="choice">
+   ${el.choice.map((input) => `<span class=${i}>${input}</span>`).join('')}
+  </div>
+  <article>
 `;
   }
 
